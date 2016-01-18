@@ -9,4 +9,6 @@ module.exports = function (grunt) {
 
 		console.log("I'm YELLING!");
 	});
+
+		grunt.registerTask('both', ['speak','yell']);
 };
