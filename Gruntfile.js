@@ -12,15 +12,19 @@ grunt.initConfig({
     },
   },
   watch: {
-	  scripts: {
-	    files: ['**/*.js'],
-	    tasks: ['jshint'],
-	    options: {
-	      spawn: false,
-	    },
+	  js: {
+	    files: ['js/**/*.js'],
+	    tasks: ['concat:js'],
+	    
   },
+	  css: {
+		    files: ['styles/**/*.css'],
+		    tasks: ['concat:css'],
+		    
+	  },
 },
 });
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.registerTask('default', ['concat', 'watch']);
 };
