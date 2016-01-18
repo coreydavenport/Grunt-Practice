@@ -2,9 +2,13 @@ module.exports = function (grunt) {
 	// Project configuration. 
 grunt.initConfig({
   concat: { 
-    dist: {
+    js: {
       src: ['js/1.js', 'js/2.js'],
       dest: 'build/js/scripts.js',
+    },
+    css: {
+      src: ['styles/red.css', 'styles/blue.css'],
+      dest: 'build/css/stylesyo.css',
     },
   },
 });
