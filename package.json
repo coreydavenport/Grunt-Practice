@@ -21,5 +21,8 @@
   "homepage": "https://github.com/coreydavenport/Grunt-Practice#readme",
   "dependencies": {
     "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "^0.5.1"
   }
 }
