@@ -11,7 +11,16 @@ grunt.initConfig({
       dest: 'build/css/stylesyo.css',
     },
   },
+  watch: {
+	  scripts: {
+	    files: ['**/*.js'],
+	    tasks: ['jshint'],
+	    options: {
+	      spawn: false,
+	    },
+  },
+},
 });
 	grunt.loadNpmTasks('grunt-contrib-concat');
-
+	grunt.loadNpmTasks('grunt-contrib-watch');
 };
